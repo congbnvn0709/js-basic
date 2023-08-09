@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="new.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>New</title>
+  </head>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Tiêu đề</th>
+          <th>Nội Dung</th>
+          <th></th>
+          <th></th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody id="post-table"></tbody>
+    </table>
+    <div id="pagination"></div>
+    <section id="modal">
+      <div class="modal-container">
+        <button class="icon" onclick="closeModal()">
+          <i class="fa-solid fa-circle-xmark"></i>
+        </button>
+        <h2 class="heading">Chi tiết Bài viết</h2>
+        <section class="detail">
+          <div class="item-detail">
+            <h4>Tiêu đề</h4>
+            <span id="title-text"></span>
+          </div>
+          <div class="item-detail">
+            <h4>Nội dung</h4>
+            <span id="content"></span>
+          </div>
+        </section>
+        <div class="wrap-btn">
+          <button class="btn-close" onclick="closeModal()">Đóng</button>
+        </div>
+      </div>
+    </section>
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+    <script src="new.js"></script>
+  </body>
+</html>
